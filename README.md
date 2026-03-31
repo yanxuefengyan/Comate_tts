@@ -113,7 +113,7 @@ vscode.commands.registerCommand('extension.speakCompletion', () => {
 ```json
 {
     "preferred_voice": "momo",
-    "api_key": "sk-75de220bcb2d4291b23b9e46dc3331a1",
+    "api_key": "SK-",
     "default_format": "mp3"
 }
 ```
