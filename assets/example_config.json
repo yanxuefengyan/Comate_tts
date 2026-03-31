@@ -1,0 +1,56 @@
+{
+  "qwen_tts_config": {
+    "api_settings": {
+      "china_region_endpoint": "https://dashscope.aliyuncs.com/api/v1",
+      "international_region_endpoint": "https://dashscope-intl.aliyuncs.com/api/v1",
+      "default_region": "china",
+      "timeout": 30,
+      "max_retries": 3
+    },
+    "model_settings": {
+      "default_model": "qwen3-tts-flash",
+      "emotional_model": "qwen3-tts-instruct-flash",
+      "voice_cloning_model": "qwen3-tts-vc-2026-01-22",
+      "voice_design_model": "qwen3-tts-vd-2026-01-26"
+    },
+    "voice_profiles": {
+      "business": {
+        "description": "商务场景音色配置",
+        "recommended_voices": ["Yunxi", "Zhiyu"],
+        "language": "Chinese",
+        "model": "qwen3-tts-flash"
+      },
+      "education": {
+        "description": "教育场景音色配置", 
+        "recommended_voices": ["Zhiyu", "Cherry"],
+        "language": "Chinese",
+        "model": "qwen3-tts-flash"
+      },
+      "entertainment": {
+        "description": "娱乐场景音色配置",
+        "recommended_voices": ["Xiaoxiao", "Cherry"],
+        "language": "Chinese", 
+        "model": "qwen3-tts-instruct-flash",
+        "instructions": "活泼有趣的语调，语速稍快"
+      },
+      "navigation": {
+        "description": "导航播报音色配置",
+        "recommended_voices": ["Cherry", "Yunxi"],
+        "language": "Chinese",
+        "model": "qwen3-tts-flash"
+      }
+    },
+    "text_processing": {
+      "max_text_length": 500,
+      "batch_delay": 1.0,
+      "chunk_strategy": "sentence",
+      "sentence_delimiters": ["。", "！", "？", ".", "!", "?"]
+    },
+    "audio_settings": {
+      "default_format": "wav",
+      "sampling_rate": 24000,
+      "output_directory": "./tts_output",
+      "keep_audio_urls": false
+    }
+  }
+}

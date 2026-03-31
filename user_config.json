@@ -1,0 +1,36 @@
+{
+  "user_preferences": {
+    "api_key": "sk-75de220bcb2d4291b23b9e46dc3331a1",
+    "preferred_voice": "momo",
+    "default_language": "Chinese",
+    "region": "china",
+    "created_by": "用户个性化设置"
+  },
+  "favorite_settings": {
+    "voice_profiles": {
+      "daily_use": {
+        "voice": "momo",
+        "model": "qwen3-tts-flash",
+        "description": "日常使用momo音色配置",
+        "language": "Chinese"
+      },
+      "emotional_content": {
+        "voice": "momo", 
+        "model": "qwen3-tts-instruct-flash",
+        "instructions": "自然亲切的语气，适合日常对话",
+        "description": "情感化内容使用momo音色",
+        "language": "Chinese"
+      }
+    },
+    "quick_start": {
+      "default_text_length": 300,
+      "auto_save_audio": true,
+      "output_directory": "./momo_audio_output"
+    }
+  },
+  "quick_commands": {
+    "basic_synthesis": "使用momo音色合成文本",
+    "batch_process": "批量处理文本文件",
+    "test_voice": "测试momo音色效果"
+  }
+}
